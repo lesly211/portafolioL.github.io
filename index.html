@@ -12,14 +12,11 @@
 
 <body>
 
-    <!-- Cursor personalizado -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <!-- Partículas de fondo -->
     <canvas id="particles-canvas"></canvas>
 
-    <!-- NAV -->
     <nav class="navbar" id="navbar">
         <div class="nav-logo">LN</div>
         <ul class="nav-links">
@@ -33,7 +30,6 @@
         </div>
     </nav>
 
-    <!-- HERO -->
     <section class="hero" id="inicio">
         <div class="hero-content">
             <div class="hero-text">
@@ -55,77 +51,7 @@
             <div class="hero-photo-wrap">
                 <div class="photo-ring"></div>
                 <div class="photo-container">
-                    <!-- Avatar SVG como placeholder de foto -->
-                    <svg class="avatar-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#1a0533"/>
-                <stop offset="100%" style="stop-color:#3b0764"/>
-              </linearGradient>
-              <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#f4c07a"/>
-                <stop offset="100%" style="stop-color:#e8a050"/>
-              </linearGradient>
-              <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#1a0a00"/>
-                <stop offset="100%" style="stop-color:#3d1a00"/>
-              </linearGradient>
-              <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" style="stop-color:#c084fc;stop-opacity:0.3"/>
-                <stop offset="100%" style="stop-color:#c084fc;stop-opacity:0"/>
-              </radialGradient>
-            </defs>
-            <!-- Fondo -->
-            <circle cx="150" cy="150" r="150" fill="url(#bgGrad)"/>
-            <!-- Glow -->
-            <circle cx="150" cy="150" r="130" fill="url(#glowGrad)"/>
-            <!-- Cuerpo / ropa -->
-            <ellipse cx="150" cy="270" rx="90" ry="60" fill="#6d28d9"/>
-            <ellipse cx="150" cy="265" rx="72" ry="50" fill="#7c3aed"/>
-            <!-- Cuello -->
-            <rect x="137" y="195" width="26" height="30" rx="8" fill="url(#skinGrad)"/>
-            <!-- Cara -->
-            <ellipse cx="150" cy="170" rx="52" ry="58" fill="url(#skinGrad)"/>
-            <!-- Cabello trasero -->
-            <ellipse cx="150" cy="155" rx="60" ry="65" fill="url(#hairGrad)"/>
-            <!-- Cara encima del cabello -->
-            <ellipse cx="150" cy="172" rx="50" ry="55" fill="url(#skinGrad)"/>
-            <!-- Cabello superior -->
-            <ellipse cx="150" cy="120" rx="54" ry="30" fill="url(#hairGrad)"/>
-            <!-- Cabello laterales -->
-            <ellipse cx="100" cy="160" rx="18" ry="40" fill="url(#hairGrad)"/>
-            <ellipse cx="200" cy="160" rx="18" ry="40" fill="url(#hairGrad)"/>
-            <!-- Cabello franja -->
-            <path d="M100 130 Q150 100 200 130 Q195 115 150 108 Q105 115 100 130Z" fill="url(#hairGrad)"/>
-            <!-- Ojos -->
-            <ellipse cx="132" cy="168" rx="9" ry="10" fill="white"/>
-            <ellipse cx="168" cy="168" rx="9" ry="10" fill="white"/>
-            <circle cx="133" cy="169" r="6" fill="#2d1047"/>
-            <circle cx="169" cy="169" r="6" fill="#2d1047"/>
-            <circle cx="135" cy="167" r="2" fill="white"/>
-            <circle cx="171" cy="167" r="2" fill="white"/>
-            <!-- Cejas -->
-            <path d="M122 156 Q132 151 142 154" stroke="#1a0a00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M158 154 Q168 151 178 156" stroke="#1a0a00" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- Nariz -->
-            <path d="M148 175 Q150 186 152 175" stroke="#c8844a" stroke-width="1.5" fill="none"/>
-            <!-- Boca -->
-            <path d="M137 192 Q150 202 163 192" stroke="#c0605a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <!-- Mejillas -->
-            <ellipse cx="120" cy="185" rx="10" ry="6" fill="#e8926a" opacity="0.4"/>
-            <ellipse cx="180" cy="185" rx="10" ry="6" fill="#e8926a" opacity="0.4"/>
-            <!-- Aretes -->
-            <circle cx="98" cy="175" r="5" fill="#c084fc"/>
-            <circle cx="202" cy="175" r="5" fill="#c084fc"/>
-            <circle cx="98" cy="182" r="3" fill="#e879f9"/>
-            <circle cx="202" cy="182" r="3" fill="#e879f9"/>
-            <!-- Destellos decorativos -->
-            <text x="45" y="80" font-size="18" fill="#c084fc" opacity="0.7">✦</text>
-            <text x="230" y="70" font-size="14" fill="#e879f9" opacity="0.6">✦</text>
-            <text x="55" y="240" font-size="10" fill="#a855f7" opacity="0.5">✦</text>
-            <text x="235" y="230" font-size="16" fill="#c084fc" opacity="0.6">✦</text>
-          </svg>
-                </div>
+                    <img src="TU_FOTO.jpg" alt="Lesly Navarro - Foto de Perfil" class="profile-photo" /> </div>
                 <div class="photo-badge">Frontend Dev</div>
             </div>
         </div>
@@ -136,7 +62,6 @@
         </div>
     </section>
 
-    <!-- STATS -->
     <section class="stats-band">
         <div class="stat-item">
             <span class="stat-num" data-target="12">0</span>
@@ -159,7 +84,6 @@
         </div>
     </section>
 
-    <!-- PROYECTOS -->
     <section class="section" id="proyectos">
         <div class="section-header">
             <p class="section-tag">Mi trabajo</p>
@@ -270,7 +194,6 @@
         </div>
     </section>
 
-    <!-- HABILIDADES -->
     <section class="section skills-section" id="habilidades">
         <div class="section-header">
             <p class="section-tag">Lo que domino</p>
@@ -353,7 +276,6 @@
         </div>
     </section>
 
-    <!-- REDES SOCIALES -->
     <section class="section social-section" id="contacto">
         <div class="section-header">
             <p class="section-tag">Conéctate conmigo</p>
@@ -416,9 +338,7 @@
             <p class="footer-copy">© 2026 Lesly Brenda Navarro Serva</p>
             <a href="#inicio" class="back-top">↑ Volver arriba</a>
         </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+    </footer <script src="js/main.js"></script>
 </body>
 
 </html>
