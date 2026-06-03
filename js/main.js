@@ -67,9 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ========================
-    // PARTÍCULAS
-    // ========================
     const canvas = document.getElementById('particles-canvas');
     const ctx = canvas.getContext('2d');
     let W = window.innerWidth,
@@ -171,9 +168,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const statsBand = document.querySelector('.stats-band');
     if (statsBand) statObserver.observe(statsBand);
 
-    // ========================
-    // SKILL BARS
-    // ========================
     const skillObserver = new IntersectionObserver((entries) => {
         entries.forEach(e => {
             if (e.isIntersecting) {
@@ -190,12 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const skillsSection = document.querySelector('.skills-section, #habilidades');
     if (skillsSection) skillObserver.observe(skillsSection);
 
-    // ========================
-    // SCROLL REVEAL
-    // ========================
     const revealElements = document.querySelectorAll(
-        '.project-card, .social-card, .skill-item, .tool-bubble, .stat-item, .quote-container'
+        '.project-card, .social-card, .skill-item, .tool-bubble, .stat-item, .quote-container, .about-block, .week-card, .reflection-card, .bib-item, .hero-info-card, .bib-category'
     );
+
     revealElements.forEach(el => el.classList.add('reveal'));
 
     const revealObserver = new IntersectionObserver((entries) => {
@@ -208,9 +200,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // ========================
-    // TILT 3D EN TARJETAS
-    // ========================
     document.querySelectorAll('[data-tilt]').forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
@@ -223,9 +212,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ========================
-    // ACTIVE NAV LINK ON SCROLL
-    // ========================
     const sections = document.querySelectorAll('section[id]');
     const navAnchors = document.querySelectorAll('.nav-links a');
 
@@ -240,9 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ========================
-    // GLITTER SPARKLES ON HERO NAME
-    // ========================
     const heroName = document.querySelector('.hero-name');
     if (heroName) {
         heroName.addEventListener('mousemove', (e) => {
@@ -251,8 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
             spark.style.cssText = `
         position:fixed; pointer-events:none; z-index:999;
         left:${e.clientX}px; top:${e.clientY}px;
-        font-size:${Math.random()*10+8}px;
-        color:${['#c084fc','#e879f9','#f59e0b'][Math.floor(Math.random()*3)]};
+        font-size:${Math.random() * 10 + 8}px;
+        color:${['#c084fc', '#e879f9', '#f59e0b'][Math.floor(Math.random() * 3)]};
         animation: sparkle 0.8s ease-out forwards;
         transform: translate(-50%,-50%);
       `;
@@ -261,7 +244,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // CSS para sparkle
     const sparkleStyle = document.createElement('style');
     sparkleStyle.textContent = `
     @keyframes sparkle {
@@ -271,9 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
   `;
     document.head.appendChild(sparkleStyle);
 
-    // ========================
-    // TYPING EFFECT EN ROL
-    // ========================
     const roles = ['Frontend Developer', 'UI Designer', 'Web Creator', 'CSS Artist'];
     let roleIndex = 0,
         charIndex = 0,
@@ -312,6 +291,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         setTimeout(typeRole, 1200);
     }
+
+    const weekTabs = document.querySelectorAll('.week-tab');
+    const weekPanels = document.querySelectorAll('.week-panel');
+
+    weekTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetWeek = tab.getAttribute('data-week');
+
+            weekTabs.forEach(t => t.classList.remove('active'));
+            weekPanels.forEach(p => p.classList.remove('active'));
+
+            tab.classList.add('active');
+            const targetPanel = document.getElementById('week-' + targetWeek);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+                targetPanel.querySelectorAll('.skill-fill').forEach((fill, i) => {
+                    fill.style.width = '0';
+                    setTimeout(() => {
+                        fill.style.width = fill.getAttribute('data-w') + '%';
+                    }, i * 150 + 100);
+                });
+            }
+        });
+    });
 
     console.log('%c✦ Portafolio de Lesly Brenda Navarro Serva', 'color:#c084fc;font-size:16px;font-weight:bold;');
     console.log('%cFrontend Developer · UI Designer · Web Creator', 'color:#a855f7;font-size:12px;');

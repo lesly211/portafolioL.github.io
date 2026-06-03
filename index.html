@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesly Brenda Navarro Serva — Portfolio</title>
+    <meta name="description"
+        content="Portafolio académico de Lesly Brenda Navarro Serva — Desarrollo de Aplicaciones Web. Proyectos, cuaderno de aprendizaje y reflexiones semanales." />
+    <title>Lesly Brenda Navarro Serva — Portafolio Académico</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -19,38 +23,64 @@
     <!-- NAV -->
     <nav class="navbar" id="navbar">
         <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#inicio">Portada</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#cuaderno">Cuaderno</a></li>
+            <li><a href="#reflexion-final">Reflexión</a></li>
+            <li><a href="#bibliografia">Bibliografía</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
         </div>
     </nav>
 
+    <!-- =====================================================
+         1. PORTADA
+    ===================================================== -->
     <section class="hero" id="inicio">
         <div class="hero-content">
             <div class="hero-text">
-                <p class="hero-greeting">✦ Bienvenido a mi portafolio ✦</p>
+                <p class="hero-greeting">✦ Bienvenido a mi portafolio académico ✦</p>
                 <h1 class="hero-name">
                     <span class="name-line">Lesly Brenda</span>
                     <span class="name-line italic">Navarro Serva</span>
                 </h1>
-                <p class="hero-role">Frontend Developer <span class="dot">·</span> UI Designer <span class="dot">·</span> Web Creator</p>
+                <p class="hero-role">Desarrollo de Aplicaciones Web</p>
                 <p class="hero-desc">
-                    Apasionada por crear experiencias digitales hermosas y funcionales. Transformo ideas en interfaces elegantes que conectan con las personas.
+                    Estudiante apasionada por el desarrollo web y el diseño de interfaces. A lo largo de este portafolio
+                    encontrarás mis proyectos, aprendizajes y reflexiones de cada semana de estudio.
                 </p>
+
+                <!-- Estudios y Experiencia en la portada -->
+                <div class="hero-info-cards">
+                    <div class="hero-info-card">
+                        <span class="info-icon">🎓</span>
+                        <div>
+                            <span class="info-label">Estudios</span>
+                            <span class="info-value">Ingeniería de Sistemas / Desarrollo de Aplicaciones Web</span>
+                        </div>
+                    </div>
+                    <div class="hero-info-card">
+                        <span class="info-icon">💼</span>
+                        <div>
+                            <span class="info-label">Experiencia</span>
+                            <span class="info-value">Diseño Frontend · UI/UX · Proyectos Académicos</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="hero-btns">
                     <a href="#proyectos" class="btn-primary">Ver proyectos</a>
-                    <a href="#contacto" class="btn-ghost">Contáctame</a>
+                    <a href="#cuaderno" class="btn-ghost">Cuaderno de aprendizaje</a>
                 </div>
             </div>
 
             <div class="hero-photo-wrap">
                 <div class="photo-ring"></div>
                 <div class="photo-container">
-                    <img src="fotoL.png" alt="Lesly Navarro - Foto de Perfil" class="profile-photo" /> </div>
+                    <img src="fotoL.png" alt="Lesly Navarro - Foto de Perfil" class="profile-photo" />
+                </div>
                 <div class="photo-badge">Frontend Dev</div>
             </div>
         </div>
@@ -60,6 +90,7 @@
         </div>
     </section>
 
+    <!-- Stats band -->
     <section class="stats-band">
         <div class="stat-item">
             <span class="stat-num" data-target="7">0</span>
@@ -67,8 +98,8 @@
         </div>
         <div class="stat-divider">✦</div>
         <div class="stat-item">
-            <span class="stat-num" data-target="6">0</span>
-            <span class="stat-label">Tecnologías</span>
+            <span class="stat-num" data-target="7">0</span>
+            <span class="stat-label">Semanas</span>
         </div>
         <div class="stat-divider">✦</div>
         <div class="stat-item">
@@ -77,15 +108,146 @@
         </div>
         <div class="stat-divider">✦</div>
         <div class="stat-item">
-            <span class="stat-num" data-target="3">0</span>
-            <span class="stat-label">Años aprendiendo</span>
+            <span class="stat-num" data-target="6">0</span>
+            <span class="stat-label">Tecnologías</span>
         </div>
     </section>
 
+    <section class="section" id="sobre-mi">
+        <div class="section-header">
+            <p class="section-tag">Conóceme</p>
+            <h2 class="section-title">Sobre <span class="italic">Mí</span></h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-photo-col">
+                <div class="about-photo-frame">
+                    <img src="fotoL.png" alt="Lesly Navarro" class="about-photo" />
+                    <div class="about-photo-deco">✦</div>
+                </div>
+            </div>
+            <div class="about-content-col">
+                <p class="about-intro">Hola, soy <strong>Lesly Brenda Navarro Serva</strong>, una estudiante de
+                    desarrollo de aplicaciones web con una profunda pasión por crear experiencias digitales hermosas y
+                    funcionales.</p>
+
+                <div class="about-blocks">
+                    <div class="about-block">
+                        <h3 class="about-block-title">🎓 Formación Académica</h3>
+                        <p>Estudio Ingeniería de Sistemas / Desarrollo de Aplicaciones Web. Me especializo en
+                            tecnologías frontend como HTML5, CSS3, JavaScript y React, siempre buscando aplicar buenas
+                            prácticas de diseño y programación.</p>
+                    </div>
+                    <div class="about-block">
+                        <h3 class="about-block-title">💡 Intereses</h3>
+                        <p>Me apasiona el diseño UI/UX, la creación de interfaces accesibles y la mejora continua.
+                            Disfruto aprender nuevas herramientas y tecnologías que me permitan crear productos
+                            digitales de alto impacto.</p>
+                    </div>
+                    <div class="about-block">
+                        <h3 class="about-block-title">🛠️ Habilidades Técnicas</h3>
+                        <div class="skills-mini">
+                            <div class="skill-item">
+                                <div class="skill-top"><span class="skill-name">HTML5</span><span
+                                        class="skill-pct">80%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-top"><span class="skill-name">CSS3 / SASS</span><span
+                                        class="skill-pct">70%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-top"><span class="skill-name">JavaScript</span><span
+                                        class="skill-pct">50%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-top"><span class="skill-name">React</span><span
+                                        class="skill-pct">30%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="30"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-top"><span class="skill-name">UI / UX Design</span><span
+                                        class="skill-pct">85%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" data-w="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-block">
+                        <h3 class="about-block-title">🔧 Herramientas</h3>
+                        <div class="tools-bubbles">
+                            <div class="tool-bubble">VS Code</div>
+                            <div class="tool-bubble">Git & GitHub</div>
+                            <div class="tool-bubble">Figma</div>
+                            <div class="tool-bubble">Canva</div>
+                            <div class="tool-bubble">SQL</div>
+                            <div class="tool-bubble">BIZAGI</div>
+                            <div class="tool-bubble">Notion</div>
+                            <div class="tool-bubble">Responsive Design</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-socials">
+                    <a href="https://github.com/lesly211" target="_blank" class="social-card github">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <span class="social-name">GitHub</span>
+                            <span class="social-handle">github.com/lesly211</span>
+                        </div>
+                        <div class="social-arrow">→</div>
+                    </a>
+                    <a href="https://linkedin.com/in/lesly-brenda-navarro-serva-813177322" target="_blank"
+                        class="social-card linkedin">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <span class="social-name">LinkedIn</span>
+                            <span class="social-handle">Lesly Brenda Navarro Serva</span>
+                        </div>
+                        <div class="social-arrow">→</div>
+                    </a>
+                    <a href="mailto:leslynavarro804@gmail.com" class="social-card email">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+                            </svg>
+                        </div>
+                        <div class="social-info">
+                            <span class="social-name">Email</span>
+                            <span class="social-handle">leslynavarro804@gmail.com</span>
+                        </div>
+                        <div class="social-arrow">→</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section" id="proyectos">
         <div class="section-header">
             <p class="section-tag">Mi trabajo</p>
-            <h2 class="section-title">Proyectos <span class="italic">Destacados</span></h2>
+            <h2 class="section-title">Proyectos <span class="italic">Concluidos</span></h2>
         </div>
 
         <div class="projects-grid">
@@ -93,222 +255,666 @@
             <div class="project-card" data-tilt>
                 <div class="project-img" style="background: linear-gradient(135deg, #1e1b4b 0%, #4c1d95 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/hospedajeSemana2.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/hospedajeSemana2.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                    <h3>SEMANA 02 - HS PONTAY</h3>
+                    <h3>SEMANA 02 — HS PONTAY</h3>
                     <p>Diseño de página web de un hospedaje con su catálogo disponible y responsive completo.</p>
                 </div>
             </div>
 
             <div class="project-card featured" data-tilt>
-                <div class="project-img" style="background: linear-gradient(135deg, #3b0764 0%, #7c3aed 50%, #db2777 100%);">
+                <div class="project-img"
+                    style="background: linear-gradient(135deg, #3b0764 0%, #7c3aed 50%, #db2777 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/PORTAFOLIO-.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/PORTAFOLIO-.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-badge">★ Favorito</div>
                 <div class="project-info">
                     <div class="project-tags"><span>React</span><span>CSS3</span><span>API</span></div>
-                    <h3>SEMANA 02 - DISEÑO DE PORTAFOLIO</h3>
-                    <p>Se desarrollo un portafolio individual siguiendo las instrucciones requeridas poe el docente.</p>
+                    <h3>SEMANA 02 — DISEÑO DE PORTAFOLIO</h3>
+                    <p>Se desarrolló un portafolio individual siguiendo las instrucciones requeridas por el docente.</p>
                 </div>
             </div>
 
             <div class="project-card" data-tilt>
                 <div class="project-img" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/PAGINAWEB_TIENDAROPA.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/PAGINAWEB_TIENDAROPA.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags"><span>HTML</span><span>SASS</span><span>JS</span></div>
-                    <h3>SEMANA 03 - PÁGINA DE TIENDA DE ROPA</h3>
-                    <p>Página web creativa de tienda de ropa.</p>
+                    <h3>SEMANA 03 — PÁGINA DE TIENDA DE ROPA</h3>
+                    <p>Página web creativa de tienda de ropa con diseño moderno y navegación fluida.</p>
                 </div>
             </div>
 
             <div class="project-card" data-tilt>
                 <div class="project-img" style="background: linear-gradient(135deg, #064e3b 0%, #059669 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/PAGINA_INTERACTIVA.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/PAGINA_INTERACTIVA.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <div class="project-tags"><span>CSS Grid</span><span>Flexbox</span></div>
-                    <h3>SEMANA 04 - WEB INTERACTIVA</h3>
-                    <p>Diseño de un minivideojuego de partículas con javascript.</p>
+                    <div class="project-tags"><span>CSS Grid</span><span>Flexbox</span><span>JS</span></div>
+                    <h3>SEMANA 04 — WEB INTERACTIVA</h3>
+                    <p>Diseño de un minivideojuego de partículas con JavaScript.</p>
                 </div>
             </div>
 
             <div class="project-card" data-tilt>
                 <div class="project-img" style="background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/SEMANA5_DAW.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/SEMANA5_DAW.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-info">
                     <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-                    <h3>SEMANA 05 - DASHBOARD ELECTROH</h3>
-                    <p>Dahboard de una tienda electrónica</p>
+                    <h3>SEMANA 05 — DASHBOARD ELECTROH</h3>
+                    <p>Dashboard de una tienda electrónica con métricas y panel de control.</p>
                 </div>
             </div>
 
             <div class="project-card" data-tilt>
-                <div class="project-img" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);">
+                <div class="project-img"
+                    style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/PRACTICA_SEMANA6.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/PRACTICA_SEMANA6.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <div class="project-tags"><span>JavaScript</span><span>Chart.js</span></div>
-                    <h3>SEMANA 06 - SPA</h3>
-                    <p>Uso de herramientas técnicas de REACT</p>
+                    <div class="project-tags"><span>JavaScript</span><span>Chart.js</span><span>React</span></div>
+                    <h3>SEMANA 06 — SPA</h3>
+                    <p>Uso de herramientas técnicas de React para crear una Single Page Application.</p>
                 </div>
             </div>
 
             <div class="project-card" data-tilt>
-                <div class="project-img" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);">
+                <div class="project-img"
+                    style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);">
                     <div class="project-overlay">
-                        <a href="https://github.com/lesly211/PR-CTICA7_HOOKS.git" class="overlay-btn ghost">GitHub</a>
+                        <a href="https://github.com/lesly211/PR-CTICA7_HOOKS.git" target="_blank"
+                            class="overlay-btn ghost">GitHub</a>
                     </div>
                 </div>
                 <div class="project-info">
-                    <div class="project-tags"><span>JavaScript</span><span>REACT</span></div>
-                    <h3>SEMANA 07 - CONTADOR REACT</h3>
-                    <p>Uso de herramientas técnicas de REACT</p>
+                    <div class="project-tags"><span>JavaScript</span><span>REACT</span><span>Hooks</span></div>
+                    <h3>SEMANA 07 — CONTADOR REACT</h3>
+                    <p>Uso de Hooks de React: useState, useEffect y otros conceptos clave de la librería.</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="section skills-section" id="habilidades">
+    <section class="section" id="cuaderno">
         <div class="section-header">
-            <p class="section-tag">Lo que domino</p>
-            <h2 class="section-title">Mis <span class="italic">Habilidades</span></h2>
+            <p class="section-tag">Diario académico</p>
+            <h2 class="section-title">Cuaderno de <span class="italic">Aprendizaje</span></h2>
         </div>
 
-        <div class="skills-container">
-            <div class="skills-list">
-                <div class="skill-item">
-                    <div class="skill-top">
-                        <span class="skill-name">HTML5</span>
-                        <span class="skill-pct">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill" data-w="95"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-top">
-                        <span class="skill-name">CSS3 / SASS</span>
-                        <span class="skill-pct">70%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill" data-w="90"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-top">
-                        <span class="skill-name">JavaScript</span>
-                        <span class="skill-pct">50%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill" data-w="80"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-top">
-                        <span class="skill-name">React</span>
-                        <span class="skill-pct">30%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill" data-w="70"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-top">
-                        <span class="skill-name">UI / UX Design</span>
-                        <span class="skill-pct">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill" data-w="85"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-top">
-                        <span class="skill-name">Figma</span>
-                        <span class="skill-pct">60%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill" data-w="75"></div>
-                    </div>
+        <!-- Tabs de semanas -->
+        <div class="weeks-tabs" id="weeks-tabs">
+            <button class="week-tab active" data-week="1">Semana 1</button>
+            <button class="week-tab" data-week="2">Semana 2</button>
+            <button class="week-tab" data-week="3">Semana 3</button>
+            <button class="week-tab" data-week="4">Semana 4</button>
+            <button class="week-tab" data-week="5">Semana 5</button>
+            <button class="week-tab" data-week="6">Semana 6</button>
+            <button class="week-tab" data-week="7">Semana 7</button>
+        </div>
+
+        <div class="week-panel active" id="week-1">
+            <div class="week-header">
+                <span class="week-number">01</span>
+                <div>
+                    <h3 class="week-title">Semana 1</h3>
+                    <p class="week-subtitle">Fundamentos del Desarrollo Web</p>
                 </div>
             </div>
-
-            <div class="tools-grid">
-                <h3 class="tools-title">Herramientas & Tech</h3>
-                <div class="tools-bubbles">
-                    <div class="tool-bubble">VS Code</div>
-                    <div class="tool-bubble">Git & GitHub</div>
-                    <div class="tool-bubble">Figma</div>
-                    <div class="tool-bubble">CSS Animations</div>
-                    <div class="tool-bubble">Responsive Design</div>
-                    <div class="tool-bubble">Canva</div>
-                    <div class="tool-bubble">SQL</div>
-                    <div class="tool-bubble">BIZAGI</div>
-                    <div class="tool-bubble">Notion</div>
-                    <div class="tool-bubble">Procesos</div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Durante la primera semana me familiaricé con los conceptos básicos del desarrollo web. Aprendí
+                        que <strong>HTML</strong> (HyperText Markup Language) es el lenguaje de marcado que estructura
+                        el contenido de una página web mediante etiquetas. <strong>CSS</strong> (Cascading Style Sheets)
+                        es el lenguaje que define el estilo visual: colores, tipografías, espaciados y disposición de
+                        los elementos. También aprendí qué es un <strong>servidor web</strong> y cómo funciona el modelo
+                        cliente-servidor: el cliente (navegador) realiza una petición y el servidor responde con el
+                        contenido solicitado. Se introdujo el concepto de <strong>repositorio Git</strong> y la
+                        plataforma GitHub para el control de versiones del código.</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>En el laboratorio creé mi primera página web con HTML puro: una estructura con encabezado,
+                        párrafos, listas y enlaces. Luego apliqué estilos básicos de CSS: cambié colores de fondo,
+                        tipografías y márgenes. El resultado fue una página simple pero funcional que me permitió
+                        entender el flujo de trabajo básico: escribir código → guardar → visualizar en el navegador.
+                        También configuré mi primer repositorio en GitHub y subí el código usando comandos Git básicos
+                        (git init, git add, git commit, git push).</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> Aprendí la estructura fundamental de una página web y la
+                        diferencia entre contenido (HTML) y presentación (CSS). También comprendí la importancia del
+                        control de versiones para el trabajo colaborativo.<br /><br /><strong>¿Cómo aprendí?</strong>
+                        Mediante la práctica directa: escribir código, cometer errores, buscar soluciones y volver a
+                        intentarlo. Las explicaciones del docente combinadas con la experimentación propia fueron clave
+                        para interiorizar los conceptos.</p>
                 </div>
             </div>
         </div>
+
+        <div class="week-panel" id="week-2">
+            <div class="week-header">
+                <span class="week-number">02</span>
+                <div>
+                    <h3 class="week-title">Semana 2</h3>
+                    <p class="week-subtitle">Diseño Responsive y Portafolio</p>
+                </div>
+            </div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Esta semana profundicé en el <strong>diseño responsive</strong>: la capacidad de una página web
+                        de adaptarse a diferentes tamaños de pantalla (móviles, tablets, escritorio). Aprendí el uso de
+                        <strong>media queries</strong> en CSS para aplicar estilos condicionales según el ancho del
+                        viewport. También estudié <strong>Flexbox</strong>, un modelo de diseño unidimensional que
+                        facilita la alineación y distribución de elementos en una fila o columna. Se introdujo el
+                        concepto de <strong>portafolio web</strong> como herramienta profesional para mostrar el trabajo
+                        y las habilidades de un desarrollador.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>Desarrollé dos proyectos: una página de hospedaje (HS Pontay) con catálogo de habitaciones y
+                        diseño responsive completo, y mi primer portafolio personal. En ambos proyectos apliqué Flexbox
+                        para organizar los elementos y media queries para garantizar que se vieran bien en dispositivos
+                        móviles. El resultado fue satisfactorio: las páginas se adaptaban correctamente a distintos
+                        tamaños de pantalla.</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> Comprendí que el diseño responsive no es opcional en el desarrollo
+                        web moderno, ya que más del 60% del tráfico web proviene de dispositivos móviles. Aprendí a
+                        pensar en "mobile first" y luego adaptar al escritorio.<br /><br /><strong>¿Cómo
+                            aprendí?</strong> A través de la construcción de proyectos reales. Ver cómo el mismo código
+                        se veía diferente en distintos dispositivos me ayudó a entender la importancia de los
+                        breakpoints y el diseño adaptativo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="week-panel" id="week-3">
+            <div class="week-header">
+                <span class="week-number">03</span>
+                <div>
+                    <h3 class="week-title">Semana 3</h3>
+                    <p class="week-subtitle">CSS Grid y Animaciones</p>
+                </div>
+            </div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Esta semana aprendí sobre <strong>CSS Grid</strong>, un sistema de diseño bidimensional que
+                        permite crear layouts complejos con filas y columnas simultáneamente. A diferencia de Flexbox
+                        (unidimensional), Grid controla tanto el eje horizontal como el vertical. También estudié las
+                        <strong>animaciones CSS</strong> con propiedades como <code>transition</code>,
+                        <code>@keyframes</code> y <code>animation</code>, que permiten añadir movimiento y dinamismo a
+                        los elementos. Se introdujo <strong>SASS</strong> como preprocesador de CSS que agrega
+                        variables, anidación, mixins y funciones para escribir código más organizado y reutilizable.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>Desarrollé una página web de tienda de ropa utilizando CSS Grid para el layout de productos y
+                        SASS para los estilos. Implementé animaciones hover en las tarjetas de productos para que estas
+                        elevaran y mostraran información adicional. El resultado fue una tienda visualmente atractiva
+                        con transiciones fluidas que mejoraban la experiencia del usuario.</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> Entendí la diferencia entre Flexbox y Grid y cuándo usar cada uno.
+                        Grid es ideal para layouts de página completa, mientras que Flexbox funciona mejor para
+                        componentes individuales. Las animaciones CSS me enseñaron que los detalles visuales marcan la
+                        diferencia en la experiencia del usuario.<br /><br /><strong>¿Cómo aprendí?</strong>
+                        Experimentando con el Inspector de Elementos del navegador para modificar valores en tiempo real
+                        y ver los resultados al instante. Este método de "ensayo y error visual" fue muy efectivo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="week-panel" id="week-4">
+            <div class="week-header">
+                <span class="week-number">04</span>
+                <div>
+                    <h3 class="week-title">Semana 4</h3>
+                    <p class="week-subtitle">JavaScript Interactivo</p>
+                </div>
+            </div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Esta semana me introduje en <strong>JavaScript</strong> como lenguaje de programación del lado
+                        del cliente. Aprendí los conceptos fundamentales: variables (let, const, var), tipos de datos,
+                        funciones, condicionales y bucles. Estudié la <strong>manipulación del DOM</strong> (Document
+                        Object Model): cómo seleccionar elementos HTML con <code>document.querySelector</code>,
+                        modificar su contenido, estilos y atributos mediante JavaScript. También aprendí sobre
+                        <strong>eventos</strong>: cómo escuchar interacciones del usuario (click, mouseover, keypress) y
+                        responder a ellas con código. Se trabajó con el <strong>Canvas API</strong> para dibujar
+                        gráficos y animaciones en el navegador.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>Creé una página web interactiva con un minivideojuego de partículas usando el Canvas API de
+                        JavaScript. Las partículas se movían aleatoriamente, se conectaban entre sí con líneas cuando
+                        estaban cerca y reaccionaban al movimiento del ratón. Esto me permitió practicar animaciones con
+                        <code>requestAnimationFrame</code>, manipulación de coordenadas y eventos del ratón.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> JavaScript transforma páginas estáticas en aplicaciones dinámicas
+                        e interactivas. El Canvas API abre un mundo de posibilidades para crear visualizaciones y juegos
+                        directamente en el navegador sin plugins adicionales.<br /><br /><strong>¿Cómo aprendí?</strong>
+                        Siguiendo tutoriales paso a paso y luego modificando el código para ver qué pasaba. Depurar
+                        errores en la consola del navegador fue fundamental para entender cómo funciona JavaScript
+                        internamente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="week-panel" id="week-5">
+            <div class="week-header">
+                <span class="week-number">05</span>
+                <div>
+                    <h3 class="week-title">Semana 5</h3>
+                    <p class="week-subtitle">Dashboards y UI Avanzada</p>
+                </div>
+            </div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Esta semana aprendí a diseñar <strong>dashboards</strong> (paneles de control): interfaces que
+                        muestran información clave de forma visual y organizada. Estudié el uso de <strong>gráficas y
+                            visualizaciones de datos</strong> con librerías como Chart.js. También se profundizó en la
+                        <strong>arquitectura de componentes</strong>: dividir la interfaz en partes reutilizables y
+                        modulares (barra de navegación, tarjetas de estadísticas, tablas, gráficas). Se abordaron
+                        conceptos de <strong>UX (User Experience)</strong>: cómo diseñar interfaces que sean intuitivas,
+                        accesibles y agradables para el usuario final.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>Desarrollé un dashboard completo para una tienda electrónica (ElectroH) que incluía: tarjetas de
+                        métricas (ventas, usuarios, productos), una gráfica de barras con las ventas por mes, una tabla
+                        de últimas transacciones y un panel de navegación lateral. El resultado fue una interfaz
+                        profesional y funcional que simulaba un panel de administración real.</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> El diseño de dashboards requiere un equilibrio entre la cantidad
+                        de información mostrada y la claridad visual. Menos es más: mostrar solo los datos más
+                        relevantes evita la sobrecarga cognitiva del usuario.<br /><br /><strong>¿Cómo aprendí?</strong>
+                        Analizando dashboards existentes de productos reales (Google Analytics, Figma, Notion) y
+                        replicando sus patrones de diseño. La referencia visual es una herramienta de aprendizaje muy
+                        poderosa.</p>
+                </div>
+            </div>
+        </div>
+        <div class="week-panel" id="week-6">
+            <div class="week-header">
+                <span class="week-number">06</span>
+                <div>
+                    <h3 class="week-title">Semana 6</h3>
+                    <p class="week-subtitle">React — Introducción y SPA</p>
+                </div>
+            </div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Esta semana me introduje en <strong>React</strong>, una librería de JavaScript desarrollada por
+                        Meta para construir interfaces de usuario. Aprendí los conceptos fundamentales:
+                        <strong>componentes</strong> (unidades de UI reutilizables), <strong>JSX</strong> (sintaxis que
+                        combina JavaScript con HTML), <strong>props</strong> (propiedades que se pasan entre
+                        componentes) y el concepto de <strong>Virtual DOM</strong> (representación en memoria del DOM
+                        real que React usa para optimizar las actualizaciones). También comprendí qué es una <strong>SPA
+                            (Single Page Application)</strong>: una aplicación web que carga una sola página HTML y
+                        actualiza el contenido dinámicamente sin recargar el navegador completo.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>Construí mi primera SPA con React, organizando el código en componentes reutilizables: un Header,
+                        un componente de tarjetas de contenido y un Footer. Practiqué el paso de props entre componentes
+                        y el uso de <code>map()</code> para renderizar listas de elementos dinámicamente. El resultado
+                        fue una aplicación que navegaba entre "páginas" sin recargar el navegador, demostrando el poder
+                        de React para crear interfaces fluidas.</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> React cambia fundamentalmente la forma de pensar en el desarrollo
+                        web: en lugar de manipular el DOM directamente, describes cómo debe verse la interfaz según el
+                        estado y React se encarga del resto. Este paradigma declarativo hace el código más predecible y
+                        fácil de mantener.<br /><br /><strong>¿Cómo aprendí?</strong> A través de la documentación
+                        oficial de React y ejercicios prácticos progresivos. Comenzar con componentes simples y aumentar
+                        gradualmente la complejidad fue la estrategia más efectiva.</p>
+                </div>
+            </div>
+        </div>
+        <div class="week-panel" id="week-7">
+            <div class="week-header">
+                <span class="week-number">07</span>
+                <div>
+                    <h3 class="week-title">Semana 7</h3>
+                    <p class="week-subtitle">React Hooks — useState y useEffect</p>
+                </div>
+            </div>
+            <div class="week-content">
+                <div class="week-card">
+                    <div class="week-card-icon">📖</div>
+                    <h4 class="week-card-title">Definiciones y Temas Aprendidos</h4>
+                    <p>Esta semana profundicé en los <strong>Hooks de React</strong>, funciones especiales que permiten
+                        usar estado y otras características de React en componentes funcionales.
+                        <strong>useState</strong> permite declarar variables de estado: cuando el estado cambia, React
+                        re-renderiza el componente automáticamente. <strong>useEffect</strong> permite ejecutar efectos
+                        secundarios (peticiones a APIs, suscripciones, manipulación del DOM) de forma controlada,
+                        especificando cuándo se ejecutan mediante el array de dependencias. También se estudió el
+                        concepto de <strong>ciclo de vida</strong> de un componente: montaje, actualización y
+                        desmontaje.
+                    </p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">🧪</div>
+                    <h4 class="week-card-title">Ejercicios de Laboratorio — Resultados</h4>
+                    <p>Desarrollé un contador interactivo con React utilizando useState para gestionar el valor del
+                        contador, botones de incremento, decremento y reset. Luego extendí el proyecto usando useEffect
+                        para guardar el valor en localStorage automáticamente cada vez que cambiaba, de forma que el
+                        contador persistiera al recargar la página. El resultado demostró cómo los Hooks simplifican la
+                        gestión del estado en aplicaciones React.</p>
+                </div>
+                <div class="week-card">
+                    <div class="week-card-icon">💭</div>
+                    <h4 class="week-card-title">Reflexión — ¿Qué aprendí? ¿Cómo aprendí?</h4>
+                    <p><strong>¿Qué aprendí?</strong> Los Hooks representan la forma moderna de escribir React. useState
+                        y useEffect son los más fundamentales y con ellos se puede construir la gran mayoría de las
+                        funcionalidades de una aplicación. Entender el array de dependencias de useEffect es clave para
+                        evitar bucles infinitos de re-renderizado.<br /><br /><strong>¿Cómo aprendí?</strong>
+                        Construyendo proyectos que requerían estado y efectos. Los errores en la consola fueron mis
+                        mejores maestros: cada warning de React explicaba exactamente qué estaba haciendo mal y cómo
+                        corregirlo.</p>
+                </div>
+            </div>
+        </div>
+
     </section>
-
-    <section class="section social-section" id="contacto">
+    <section class="section" id="reflexion-final">
         <div class="section-header">
-            <p class="section-tag">Conéctate conmigo</p>
-            <h2 class="section-title">Redes <span class="italic">Sociales</span></h2>
+            <p class="section-tag">Conclusión del curso</p>
+            <h2 class="section-title">Reflexión <span class="italic">Final</span></h2>
         </div>
 
-        <div class="socials-grid">
-            <a href="https://github.com/lesly211" target="_blank" class="social-card github">
-                <div class="social-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-                </div>
-                <div class="social-info">
-                    <span class="social-name">GitHub</span>
-                    <span class="social-handle">https://github.com/lesly211</span>
-                </div>
-                <div class="social-arrow">→</div>
-            </a>
+        <div class="reflection-intro">
+            <p>A continuación presento mi reflexión global del aprendizaje acumulado a lo largo de las 7 semanas del
+                curso de Desarrollo de Aplicaciones Web.</p>
+        </div>
 
-            <a href="https://linkedin.com/in/lesly-brenda-navarro-serva-813177322" target="_blank" class="social-card linkedin">
-                <div class="social-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </div>
-                <div class="social-info">
-                    <span class="social-name">LinkedIn</span>
-                    <span class="social-handle">Lesly Brenda Navarro Serva</span>
-                </div>
-                <div class="social-arrow">→</div>
-            </a>
+        <div class="reflection-grid">
 
-            <a href="mailto:leslynavarro804@gmail.com" class="social-card email">
-                <div class="social-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div class="reflection-card big">
+                <div class="reflection-icon">🧠</div>
+                <h3>¿Qué aprendí? — Por semana</h3>
+                <div class="reflection-list">
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S1</span>
+                        <p>Fundamentos de HTML y CSS, estructura web, cliente-servidor y control de versiones con Git.
+                        </p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S2</span>
+                        <p>Diseño responsive con media queries, Flexbox y creación de portafolios web profesionales.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S3</span>
+                        <p>CSS Grid para layouts bidimensionales, animaciones CSS y preprocesadores como SASS.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S4</span>
+                        <p>JavaScript: DOM, eventos, Canvas API y programación de animaciones interactivas.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S5</span>
+                        <p>Diseño de dashboards, visualización de datos con Chart.js y principios de UX.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S6</span>
+                        <p>React: componentes, JSX, props, Virtual DOM y Single Page Applications.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S7</span>
+                        <p>Hooks de React (useState, useEffect), gestión de estado y ciclo de vida de componentes.</p>
+                    </div>
                 </div>
-                <div class="social-info">
-                    <span class="social-name">Email</span>
-                    <span class="social-handle">leslynavarro804@gmail.com</span>
+            </div>
+
+            <div class="reflection-card big">
+                <div class="reflection-icon">🚀</div>
+                <h3>¿Cómo aprendí? — Por semana</h3>
+                <div class="reflection-list">
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S1</span>
+                        <p>Práctica directa: escribir código, cometer errores y buscar soluciones por mi cuenta.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S2</span>
+                        <p>Construyendo proyectos reales y probando en distintos dispositivos para ver la adaptación.
+                        </p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S3</span>
+                        <p>Uso del Inspector de Elementos para modificar valores en tiempo real y experimentar
+                            visualmente.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S4</span>
+                        <p>Tutoriales paso a paso + modificaciones propias para ver los efectos del cambio en el código.
+                        </p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S5</span>
+                        <p>Análisis y referencia de dashboards de productos reales para entender patrones de diseño.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S6</span>
+                        <p>Documentación oficial de React y ejercicios progresivos de menor a mayor complejidad.</p>
+                    </div>
+                    <div class="reflection-week-item">
+                        <span class="rw-num">S7</span>
+                        <p>Proyectos que requerían estado y efectos; los errores de la consola como guía de aprendizaje.
+                        </p>
+                    </div>
                 </div>
-                <div class="social-arrow">→</div>
-            </a>
+            </div>
+
+            <div class="reflection-card conclusion">
+                <div class="reflection-icon">✨</div>
+                <h3>Conclusión General</h3>
+                <p>Este curso fue un viaje de aprendizaje intenso y profundamente transformador. Comencé sin saber la
+                    diferencia entre HTML y CSS, y termino siendo capaz de construir aplicaciones web completas con
+                    React. Lo más valioso que aprendí no fue solo tecnología, sino una mentalidad: la de <em>aprender
+                        haciendo</em>, de no temer a los errores y de ver cada problema como una oportunidad de
+                    crecimiento.</p>
+                <p>El desarrollo web es un campo en constante evolución, y estas 7 semanas me dieron las bases sólidas y
+                    la confianza para seguir aprendiendo de forma autónoma. Cada proyecto fue un reto que me impulsó a
+                    salir de mi zona de confort y descubrir nuevas formas de pensar y crear.</p>
+                <blockquote class="inline-quote">"El código no es solo lógica; es la forma en que le damos forma a
+                    nuestras ideas."</blockquote>
+            </div>
+
         </div>
     </section>
+    <section class="section" id="bibliografia">
+        <div class="section-header">
+            <p class="section-tag">Fuentes consultadas</p>
+            <h2 class="section-title">Biblio<span class="italic">grafía</span></h2>
+        </div>
 
+        <div class="bib-grid">
+
+            <div class="bib-category">
+                <div class="bib-cat-header">
+                    <span class="bib-cat-icon">📚</span>
+                    <h3 class="bib-cat-title">Libros</h3>
+                </div>
+                <ul class="bib-list">
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Duckett, J.</span>
+                            <p class="bib-title">HTML and CSS: Design and Build Websites</p>
+                            <span class="bib-meta">John Wiley & Sons, 2011. ISBN: 978-1118008188</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Duckett, J.</span>
+                            <p class="bib-title">JavaScript and jQuery: Interactive Front-End Web Development</p>
+                            <span class="bib-meta">John Wiley & Sons, 2014. ISBN: 978-1118531648</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Welling, L. & Thomson, L.</span>
+                            <p class="bib-title">PHP and MySQL Web Development (5th Edition)</p>
+                            <span class="bib-meta">Addison-Wesley Professional, 2016. ISBN: 978-0321833891</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Simpson, K.</span>
+                            <p class="bib-title">You Don't Know JS: Scope & Closures</p>
+                            <span class="bib-meta">O'Reilly Media, 2014. ISBN: 978-1491904151</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Banks, A. & Porcello, E.</span>
+                            <p class="bib-title">Learning React: Modern Patterns for Developing React Apps</p>
+                            <span class="bib-meta">O'Reilly Media, 2020. ISBN: 978-1492051725</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Fain, Y. & Moiseev, A.</span>
+                            <p class="bib-title">Angular Development with TypeScript (2nd Edition)</p>
+                            <span class="bib-meta">Manning Publications, 2018. ISBN: 978-1617295348</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bib-category">
+                <div class="bib-cat-header">
+                    <span class="bib-cat-icon">🌐</span>
+                    <h3 class="bib-cat-title">Recursos Web</h3>
+                </div>
+                <ul class="bib-list">
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Mozilla Developer Network (MDN)</span>
+                            <p class="bib-title">Documentación oficial de HTML, CSS y JavaScript</p>
+                            <span class="bib-meta"><a href="https://developer.mozilla.org/es/" target="_blank"
+                                    class="bib-url">developer.mozilla.org/es/</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">React Team — Meta Open Source</span>
+                            <p class="bib-title">React — Documentación oficial</p>
+                            <span class="bib-meta"><a href="https://react.dev/" target="_blank"
+                                    class="bib-url">react.dev</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">W3Schools</span>
+                            <p class="bib-title">Tutoriales y referencias de HTML, CSS, JavaScript y más</p>
+                            <span class="bib-meta"><a href="https://www.w3schools.com/" target="_blank"
+                                    class="bib-url">www.w3schools.com</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">CSS-Tricks</span>
+                            <p class="bib-title">A Complete Guide to Flexbox y A Complete Guide to Grid</p>
+                            <span class="bib-meta"><a href="https://css-tricks.com/" target="_blank"
+                                    class="bib-url">css-tricks.com</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">GitHub Docs</span>
+                            <p class="bib-title">Documentación oficial de GitHub: repositorios, ramas y colaboración</p>
+                            <span class="bib-meta"><a href="https://docs.github.com/es" target="_blank"
+                                    class="bib-url">docs.github.com/es</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Chart.js</span>
+                            <p class="bib-title">Chart.js — Documentación oficial de la librería de gráficas</p>
+                            <span class="bib-meta"><a href="https://www.chartjs.org/docs/" target="_blank"
+                                    class="bib-url">www.chartjs.org/docs/</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Sass — Syntactically Awesome Style Sheets</span>
+                            <p class="bib-title">Sass: Documentación oficial del preprocesador CSS</p>
+                            <span class="bib-meta"><a href="https://sass-lang.com/documentation/" target="_blank"
+                                    class="bib-url">sass-lang.com/documentation/</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                    <li class="bib-item">
+                        <div class="bib-item-content">
+                            <span class="bib-author">Git SCM</span>
+                            <p class="bib-title">Pro Git Book — Libro oficial de Git</p>
+                            <span class="bib-meta"><a href="https://git-scm.com/book/es/v2" target="_blank"
+                                    class="bib-url">git-scm.com/book/es/v2</a> — Consultado en 2026</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
     <section class="quote-section">
         <div class="quote-container">
             <div class="quote-mark">"</div>
@@ -326,7 +932,7 @@
             <p class="footer-text">
                 <strong>Autora: Lesly Brenda Navarro Serva</strong>
             </p>
-            <p class="footer-copy">© 2026 Lesly Brenda Navarro Serva</p>
+            <p class="footer-copy">© 2026 Lesly Brenda Navarro Serva — Portafolio Académico</p>
             <a href="#inicio" class="back-top">↑ Volver arriba</a>
         </div>
     </footer>
